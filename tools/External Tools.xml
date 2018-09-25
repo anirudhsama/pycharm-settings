@@ -1,0 +1,30 @@
+<toolSet name="External Tools">
+  <tool name="clear file" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="find" />
+      <option name="PARAMETERS" value="$USER_HOME$/Documents/Code/mom-server -type f -name '*.py[cdo]' -delete" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documents/Code/mom-server" />
+    </exec>
+  </tool>
+  <tool name="stop service" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="docker-compose" />
+      <option name="PARAMETERS" value="-f /Users/Anirudh/Documents/Code/mom-server/docker-compose-test.yml stop db_test redis_test citus_test" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documents/Code/mom-server" />
+    </exec>
+  </tool>
+  <tool name="remove service" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="docker-compose" />
+      <option name="PARAMETERS" value="-f /Users/Anirudh/Documents/Code/mom-server/docker-compose-test.yml  rm -f db_test redis_test citus_test" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documents/Code/mom-server" />
+    </exec>
+  </tool>
+  <tool name="start service" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="docker-compose" />
+      <option name="PARAMETERS" value="-f /Users/Anirudh/Documents/Code/mom-server/docker-compose-test.yml up -d db_test redis_test citus_test" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documents/Code/mom-server" />
+    </exec>
+  </tool>
+</toolSet>
