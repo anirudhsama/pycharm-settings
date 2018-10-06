@@ -12,6 +12,7 @@
       <mapping ext="prc" type="DBN-PSQL" />
       <mapping ext="trg" type="DBN-PSQL" />
       <mapping ext="vw" type="DBN-SQL" />
+      <mapping ext="conf" type="Native" />
       <mapping ext="textclipping" type="PLAIN_TEXT" />
       <mapping ext="state" type="PLAIN_TEXT" />
     </extensionMap>
