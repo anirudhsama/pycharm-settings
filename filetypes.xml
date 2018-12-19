@@ -13,6 +13,7 @@
       <mapping ext="trg" type="DBN-PSQL" />
       <mapping ext="vw" type="DBN-SQL" />
       <mapping ext="conf" type="Native" />
+      <mapping pattern=".flake8" type="PLAIN_TEXT" />
       <mapping ext="textclipping" type="PLAIN_TEXT" />
       <mapping ext="state" type="PLAIN_TEXT" />
     </extensionMap>
