@@ -27,6 +27,13 @@
       <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documents/Code/mom-server" />
     </exec>
   </tool>
+  <tool name="create config files for test" description="Create config files server_test.conf, logging.conf and alembic_test.init for running test cases" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="ansible-playbook" />
+      <option name="PARAMETERS" value="-i ansible/inventory/local ansible/create_config_files.yml" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documents/Code/mom-server" />
+    </exec>
+  </tool>
   <tool name="Black" description="Black is the uncompromising Python code formatter." showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="/usr/local/bin/black" />
